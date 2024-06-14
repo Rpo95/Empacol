@@ -2,32 +2,71 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer components {
+    .btn-primary {
+      @apply  bg-[#AEBD77] font-medium text-black px-3 py-1.5 w-48 h-12 text-xl hover:border-white hover:text-white hover:bg-[#163020] rounded-lg shadow-black shadow-[7.0px_7.0px_8.0px_rgba(0,0,0,0.38)];
+    }
+    .btn-secondary {
+      @apply  bg-[#E96701] font-medium text-white w-48 h-12 px-3 py-1.5 text-xl hover:border-b-2  hover:border-black hover:text-black hover:bg-[#ff9500] rounded-lg shadow-white shadow-[2.0px_2.0px_5.0px_rgba(0,0,0,0.38)];
+    }
+    
   }
+
+  /* Estilos para la scrollbar */
+::-webkit-scrollbar {
+  width: 8px; /* Ancho de la scrollbar */
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Color de fondo del track */
+  border-radius: 6px; /* Bordes redondeados del track */
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+::-webkit-scrollbar-thumb {
+  background: #000; /* Color del thumb (barra) */
+  border-radius: 6px; /* Bordes redondeados del thumb */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #292626; /* Color del thumb cuando se hace hover */
+}
+.slider-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.slider-wrapper {
+  display: flex;
+  transition: transform 0.5s ease; /* Transición suave al cambiar de slide */
+}
+
+.slide {
+  flex: 0 0 calc(100% / 2); /* Cada slide ocupa el 50% del ancho del contenedor */
+  max-width: calc(100% / 2);
+  margin-right: 15px; /* Espacio entre cada slide */
+}
+
+.navigation-buttons {
+  margin-top: 10px; /* Espacio entre el slider y los botones de navegación */
+  display: flex;
+  justify-content: center;
+}
+
+.left-arrow,
+.right-arrow {
+  background-color: rgba(0, 0, 0, 1.5);
+  color: white;
+  font-size: 24px;
+  border: none;
+  padding-left: 10px;
+  padding-right: 10px;
+  cursor: pointer;
+}
+
+.left-arrow {
+  margin-right: 10px; /* Espacio entre los botones de navegación */
+}
+
+.right-arrow {
+  margin-left: 10px; /* Espacio entre los botones de navegación */
 }
