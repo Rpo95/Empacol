@@ -18,7 +18,7 @@ export default function Empacol() {
         />
         <CardService
           href="/empacol/supplies"
-          src="/supplie.jpg"
+          src="/supplie.webp"
           p="Packing Materials & Equipment"
         />
       </div>

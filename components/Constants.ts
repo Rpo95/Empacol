@@ -31,7 +31,7 @@ export const images = [
   export const crates = [
     {
       id: 1,
-      src: "/crate.webp",
+      src: "/crate.jpg",
       title: "Reusable Crates",
       desc: "Empacol designs and builds quality reusable Crates which provide a secure, traveling Case for your product while being transported throughout the World. These crates are built to withstand the abuses subjected to during transportation.",
     },
