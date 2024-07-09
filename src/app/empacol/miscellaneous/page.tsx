@@ -1,13 +1,11 @@
-export default function AboutUs() {
+export default function Miscellaneous() {
   return (
-    <section className=" md:h-screen md:overflow-y-auto flex flex-col  space-y-10 ">
-      <h1 className="text-5xl text-center font-semibold text-shadow-yellow">
-        ABOUT US
+    <section className=" h-screen overflow-y-auto flex flex-col justify-around">
+      <h1 className="text-4xl text-center font-semibold text-shadow-yellow">
+        MISCELLANEOUS
       </h1>
       <div className=" space-y-5">
-        <h3 className="text-2xl font-medium text-center md:text-left">
-          Company profile
-        </h3>
+        <h3 className="text-2xl font-medium">Company profile</h3>
         <p>
           Empacol Inc. is a family owned and operated business. We specialize in
           providing a complete range of Packaging Products and Services to meet

@@ -29,7 +29,7 @@ export default function SliderCrating() {
   }, [activeImage]);
 
   return (
-    <main className="w-10/12  h-full rounded-lg flex items-center">
+    <main className="w-full md:w-10/12  h-full rounded-lg flex items-center">
       <div className=" cursor-pointer" onClick={clickNext}>
         <Image src={left} alt="vivienda interes social" className="h-12 w-12" />
       </div>
@@ -41,7 +41,7 @@ export default function SliderCrating() {
             key={idx}
             className={`${
               idx === activeImage
-                ? "block w-full h-[50vh]  transition-all duration-500 ease-in-out"
+                ? "block w-full h-[232px]  transition-all duration-500 ease-in-out"
                 : "hidden"
             }`}
           >

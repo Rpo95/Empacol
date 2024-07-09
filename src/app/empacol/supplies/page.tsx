@@ -1,48 +1,62 @@
 "use client";
 
-import React, { useState } from "react";
-import { CardSupplies } from "../../../../components";
+import React, { useState, useEffect } from "react";
+import {
+  CardCarousel,
+  SampleNextArrow,
+  SamplePrevArrow,
+} from "../../../../components";
 import { types } from "../../../../components/Constants";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 export default function Supplies() {
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const slidesPerPage = 2;
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
 
-  const nextSlide = () => {
-    const newIndex = currentIndex + 1;
-    setCurrentIndex(newIndex > types.length - slidesPerPage ? 0 : newIndex);
-  };
-
-  const prevSlide = () => {
-    const newIndex = currentIndex - 1;
-    setCurrentIndex(newIndex < 0 ? types.length - slidesPerPage : newIndex);
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
   };
 
   return (
-    <main className="flex flex-col items-center w-full justify-around  h-full">
-      <h1 className="text-5xl font-bold">Supplies</h1>
-      <div className="slider-container w-full   ">
-        <div
-          className="slider-wrapper"
-          style={{
-            transform: `translateX(-${currentIndex * (100 / slidesPerPage)}%)`,
-          }}
-        >
-          {types.map((type, index) => (
-            <div key={index} className="slide w-full  justify-center flex">
-              <CardSupplies type={type} />
-            </div>
-          ))}
-        </div>
-        <div className="navigation-buttons w-full ">
-          <button className="left-arrow" onClick={prevSlide}>
-            &#10094;
-          </button>
-          <button className="right-arrow" onClick={nextSlide}>
-            &#10095;
-          </button>
-        </div>
-      </div>
+    <main className="w-10/12  md:h-full flex flex-col md:justify-around space-y-10 md:space-y-0">
+      <h1 className="text-5xl font-semibold text-center text-shadow-yellow">
+        PACKING SUPPLIES
+      </h1>
+
+      <Slider {...settings}>
+        {types.map((type, index) => (
+          <CardCarousel key={index} type={type} />
+        ))}
+      </Slider>
     </main>
   );
 }

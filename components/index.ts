@@ -1,6 +1,8 @@
 import SamplePrevArrow from "./ArrowLeft";
 import SampleNextArrow from "./ArrowRight";
 import ButtonSidebar from "./ButtonSidebar";
+import CardCarousel from "./CardCarousel";
+import CardCatalog from "./CardCatalog";
 import CardService from "./CardService";
 import CardSupplies from "./CardSupplies";
 import CustomButtom from "./CustomButtom";
@@ -12,4 +14,4 @@ import Sidebar from "./Sidebar";
 import Slider from "./Slider";
 import SliderCrating from "./SliderCrating";
 
-export {EmpacolLayout, CustomButtom, Footer, Sidebar, ButtonSidebar, Slider, Description, CardService, SliderCrating, DescriptionCrates, CardSupplies, SampleNextArrow, SamplePrevArrow}
+export {EmpacolLayout, CustomButtom, Footer, Sidebar, ButtonSidebar, Slider, Description, CardService, SliderCrating, DescriptionCrates, CardSupplies, SampleNextArrow, SamplePrevArrow, CardCarousel, CardCatalog}

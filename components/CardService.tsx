@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function CardService({ src, p, href }: CardServiceProps) {
   return (
-    <div className="w-72 h-[380px] hover:scale-105 hover:cursor-pointer lg:h-[280px] bg-[#ff9500] shadow-xl border-t-2 border-b-2 rounded-lg shadow-[#163020]">
+    <div className="w-72 lg:w-72 xl:w-[310px] h-[310px] hover:scale-105 hover:cursor-pointer lg:h-[280px] xl:h-[340px] bg-[#ff9500] shadow-xl border-t-2 border-b-2 rounded-lg shadow-[#163020]">
       <Link href={href}>
         <div className="flex flex-col items-center w-full h-full">
           <div className="w-full h-5/6 relative">

@@ -10,6 +10,7 @@ export interface CustomButtomProps {
 export interface ButtonSidebarProps {
     title: string;
     src: string
+    onClick?: any
 }
 
 export interface DescriptionProps {
@@ -36,3 +37,11 @@ export interface CardSuppliesProps {
  
    
 }
+
+export interface CardCatalogProps {
+    catalog: {
+        title: string;
+        href: string;
+    };
+}
+

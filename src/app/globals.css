@@ -70,3 +70,10 @@
 .right-arrow {
   margin-left: 10px; /* Espacio entre los botones de navegación */
 }
+
+.text-shadow-yellow {
+  text-shadow: 3px 2px 0px #FF9600;
+}
+
+
+

@@ -126,3 +126,54 @@ export const images = [
       ]
     },
   ]
+
+
+  export const catalogs = [
+    {
+      id: 1,
+      title: "Carton Boxes",
+      href: "/empacol/cartonBoxes"
+   
+    },
+    {
+      id: 2,
+      title: "Carton Sealing Tape",
+       href: "/empacol/cartonSealing"
+    },
+    {
+      id: 3,
+      title: "Protective Packaging",
+       href: "/empacol/protectivePackaging"
+    },
+    {
+      id: 4,
+      title: "Courier Supplies",
+       href: "/empacol/courierSupplies"
+    },
+    {
+      id: 5,
+      title: "Film & Polyethylene",
+       href: "/empacol/film"
+    },
+    {
+      id: 6,
+      title: "Strapping Products",
+       href: "/empacol/strapping"
+    },
+    {
+      id: 7,
+      title: "Labels",
+       href: "/empacol/labels"
+    },
+    {
+      id: 8,
+      title: "Miscellaneous",
+       href: "/empacol/miscellaneous"
+    },
+    {
+      id: 9,
+      title: "Janitorial",
+       href: "/empacol/janitorial"
+    },
+   
+  ];
