@@ -17,7 +17,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           Menu
         </button>
       </div>
-      <div className="md:flex hidden w-[240px] h-full ml-3 items-center">
+      <div className="flex w-[240px] h-full ml-3 items-center">
         <Sidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
       </div>
       <div className="w-full md:w-5/6 flex flex-col items-center justify-between h-[95%] p-5 ">
@@ -25,9 +25,6 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <div className="w-full -mb-5">
           <Footer />
         </div>
-      </div>
-      <div className="md:hidden">
-        <Sidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
       </div>
     </main>
   );

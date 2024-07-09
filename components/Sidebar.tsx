@@ -12,12 +12,32 @@ export default function Sidebar({ isOpen, toggleSidebar }: any) {
         <h3 className="text-lg">Packing & Supplies</h3>
       </div>
       <ul className="flex flex-col w-9/12  space-y-5">
-        <ButtonSidebar src="/empacol" title="Home" />
-        <ButtonSidebar src="/empacol/aboutUs" title="About Us" />
-        <ButtonSidebar src="/empacol/crating" title="Crating" />
-        <ButtonSidebar src="/empacol/supplies" title="Supplies" />
-        <ButtonSidebar src="/empacol/services" title="Services" />
-        <ButtonSidebar src="/empacol/catalog" title="Catalog" />
+        <ButtonSidebar src="/empacol" title="Home" onClick={toggleSidebar} />
+        <ButtonSidebar
+          src="/empacol/aboutUs"
+          title="About Us"
+          onClick={toggleSidebar}
+        />
+        <ButtonSidebar
+          src="/empacol/crating"
+          title="Crating"
+          onClick={toggleSidebar}
+        />
+        <ButtonSidebar
+          src="/empacol/supplies"
+          title="Supplies"
+          onClick={toggleSidebar}
+        />
+        <ButtonSidebar
+          src="/empacol/services"
+          title="Services"
+          onClick={toggleSidebar}
+        />
+        <ButtonSidebar
+          src="/empacol/catalog"
+          title="Catalog"
+          onClick={toggleSidebar}
+        />
       </ul>
       <button
         className="md:hidden absolute top-4 right-4 text-white"
