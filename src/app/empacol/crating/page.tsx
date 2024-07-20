@@ -5,12 +5,13 @@ import { SliderCrating } from "../../../../components";
 
 export default function Crating() {
   return (
-    <section className=" md:h-screen md:overflow-y-auto flex flex-col justify-center items-center space-y-0 md:space-y-0">
-      <h1 className="text-5xl text-shadow-yellow text-center font-semibold">
+    <section className=" h-screen md:overflow-y-auto flex flex-col justify-center items-center">
+      <h1 className="text-5xl text-center font-semibold text-shadow-yellow">
         CRATING SERVICES
       </h1>
-
-      <SliderCrating />
+      <div className="overflow-scroll">
+        <SliderCrating />
+      </div>
     </section>
   );
 }
