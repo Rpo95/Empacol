@@ -29,12 +29,12 @@ export default function SliderCrating() {
   }, [activeImage]);
 
   return (
-    <main className="w-full md:w-10/12 h-full rounded-lg flex items-center">
+    <main className="w-full  h-screen md:w-10/12 md:h-full rounded-lg flex items-center">
       <div className=" cursor-pointer" onClick={clickNext}>
         <Image src={left} alt="vivienda interes social" className="h-12 w-12" />
       </div>
       <div
-        className={`w-full h-[292px] flex flex-col md:flex-row md:justify-center md:items-center  transition-transform ease-in-out duration-500 rounded-lg `}
+        className={`w-full h-[292px] bg-blue-500 flex flex-col md:flex-row md:justify-center md:items-center  transition-transform ease-in-out duration-500 rounded-lg `}
       >
         {crates.map((elem, idx) => (
           <div

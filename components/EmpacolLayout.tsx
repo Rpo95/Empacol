@@ -12,7 +12,7 @@ export default function EmpacolLayout() {
           <Image src="/layout2.svg" className="" fill alt="Empacol" />
         </div>
       </div>
-      <div className="w-full text-center absolute bottom-60 md:bottom-12">
+      <div className="w-full text-center absolute bottom-[80px] md:bottom-12">
         <Link href="/empacol">
           <button title="Welcome!" className="btn-secondary ">
             Welcome!
