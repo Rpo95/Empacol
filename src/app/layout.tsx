@@ -24,10 +24,16 @@ export default function RootLayout({
           name="description"
           content="Empacol has all of the protective packaging materials your company needs for mainland shipping and exports, Packing Materials & Equipment in Miami."
         />
+
+        <meta property="og:title" content="Empacol - Packing & Supplies" />
         <meta
-          name="keywords"
-          content="interes social, vis medellin, anaconas, proyecto"
+          property="og:description"
+          content="Empacol has all of the protective packaging materials your company needs for mainland shipping and exports, Packing Materials & Equipment in Miami"
         />
+        <meta property="og:url" content="https://empacol.vercel.app/" />
+        <meta property="og:image" content="/empacol.svg" />
+        <meta property="og:site_name" content="Empacol" />
+        <meta property="og:type" content="website" />
       </head>
       <body className={inter.className}>{children}</body>
     </html>
