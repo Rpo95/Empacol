@@ -40,7 +40,7 @@ export default function Sidebar({ isOpen, toggleSidebar }: any) {
         />
       </ul>
       <button
-        className="md:hidden absolute top-4 right-4 text-white"
+        className="md:hidden absolute top-6 right-4 text-white font-medium"
         onClick={toggleSidebar}
       >
         Close

@@ -41,7 +41,7 @@ export interface CardSuppliesProps {
 export interface CardCatalogProps {
     catalog: {
         title: string;
-        href: string;
+       
     };
 }
 

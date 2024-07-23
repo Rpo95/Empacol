@@ -13,7 +13,7 @@ export default function Footer() {
       <div className="  ">
         <h3 className="font-bold">Phone:</h3>
         <p className="flex items-center ">
-          <FaPhone className="mx-1" /> PH: (305) 594-4771
+          <FaPhone className="mr-2 md:mx-1" /> PH: (305) 594-4771
         </p>
       </div>
     </footer>

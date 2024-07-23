@@ -29,7 +29,7 @@ export default function SliderCrating() {
   }, [activeImage]);
 
   return (
-    <main className="w-full  h-screen md:w-10/12 md:h-full rounded-lg flex items-center">
+    <main className="w-full  h-auto lg:w-10/12 lg:h-full rounded-lg flex items-center">
       <div className=" cursor-pointer" onClick={clickNext}>
         <Image src={left} alt="vivienda interes social" className="h-12 w-12" />
       </div>

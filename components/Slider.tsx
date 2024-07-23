@@ -41,13 +41,14 @@ const Slider = () => {
             key={idx}
             className={`${
               idx === activeImage
-                ? "block w-full h-[50vh]  transition-all duration-500 ease-in-out"
+                ? "block w-full h-[30vh] md:h-[40vh] lg:h-[51vh] transition-all duration-500 ease-in-out"
                 : "hidden"
             }`}
           >
             <Image
               src={elem.src}
               alt=""
+              quality={100}
               width={200}
               height={200}
               className="w-full h-full object-cover rounded-t-lg md:rounded-tl-lg md:rounded-bl-lg md:rounded-t-none"
