@@ -20,7 +20,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       <div className="flex w-[240px] h-full ml-3 items-center">
         <Sidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
       </div>
-      <div className="w-full md:w-4/6 lg:w-5/6 flex flex-col items-center justify-center h-[95%] p-5 ">
+      <div className="w-full md:w-5/6 flex flex-col items-center justify-between h-[95%] p-5 ">
         {children}
         <div className="w-full -mb-5">
           <Footer />

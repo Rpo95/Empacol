@@ -47,7 +47,7 @@ export default function Supplies() {
   };
 
   return (
-    <main className="w-10/12 md:w-11/12 lg:w-10/12 h-full flex flex-col md:justify-around space-y-10 md:space-y-0">
+    <main className="w-10/12 md:w-11/12 lg:w-10/12 h-full  flex flex-col md:justify-around space-y-10 md:space-y-0">
       <h1 className="text-5xl font-semibold text-center text-shadow-yellow">
         PACKING SUPPLIES
       </h1>
