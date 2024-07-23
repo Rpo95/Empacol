@@ -8,8 +8,8 @@ export default function Sidebar({ isOpen, toggleSidebar }: any) {
       } md:relative md:translate-x-0 md:h-[95%] md:rounded-lg`}
     >
       <div className="flex flex-col  items-center">
-        <h1 className="text-3xl">Empacol</h1>
-        <h3 className="text-lg">Packing & Supplies</h3>
+        <h1 className="text-3xl font-medium ">Empacol</h1>
+        <h3 className="text-lg font-medium">Packing & Supplies</h3>
       </div>
       <ul className="flex flex-col w-9/12  space-y-5">
         <ButtonSidebar src="/empacol" title="Home" onClick={toggleSidebar} />

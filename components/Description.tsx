@@ -4,7 +4,7 @@ import { DescriptionProps } from "../types";
 const Description = ({ activeImage }: DescriptionProps) => {
   return (
     <div
-      className={`max-h-[286px] md:max-h-[247px] lg:max-h-[315px] py-3 w-full mb-10 md:mb-0  ${
+      className={`max-h-[286px] md:max-h-[315px] py-3 w-full mb-10 md:mb-0  ${
         activeImage % 2 === 0 ? "bg-[#ff9500]" : "bg-[#E96701]"
       }  relative h-full flex justify-center md:rounded-tr-lg md:rounded-br-lg md:rounded-b-none rounded-b-lg`}
     >
